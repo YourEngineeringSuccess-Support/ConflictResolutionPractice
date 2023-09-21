@@ -47,6 +47,7 @@ void KeepBothChanges ( void )
 {
 	// Simply add a new line comment (like this one) below.
 	// This is a new comment line added via Dev_Steve branch.
+	// This is a new comment while making the demo video. Branch is Dev_YourName.
 }
 
 /****************************
@@ -63,6 +64,7 @@ void KeepMasterChangesDiscardDev ( void )
 {
 	// Simply add a new line comment line below.
 	// This is a new comment line added via Dev_Steve branch.
+	// This is a new comment while making the demo video. Branch is Dev_YourName.
 }
 
 /****************************
@@ -78,6 +80,7 @@ void KeepDevChangesOverrideMaster ( void )
 {
 	// Simply add a new line comment line below.
 	// This is a new comment line added via Dev_Steve branch.
+	// This is a new comment while making the demo video. Branch is Dev_YourName.
 }
 
 
