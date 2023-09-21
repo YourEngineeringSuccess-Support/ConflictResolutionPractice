@@ -47,6 +47,7 @@
 void KeepBothChanges ( void )
 {
 	// Simply add a new line comment (like this one) below.
+	// This is a line added for testing on Dev_YourName - Demo video.
 }
 
 /****************************
@@ -62,6 +63,7 @@ void KeepBothChanges ( void )
 void KeepMasterChangesDiscardDev ( void )
 {
 	// Simply add a new line comment line below.
+	// This is a line added for testing on Dev_YourName - Demo video.
 }
 
 /****************************
@@ -76,6 +78,7 @@ void KeepMasterChangesDiscardDev ( void )
 void KeepDevChangesOverrideMaster ( void )
 {
 	// Simply add a new line comment line below.
+	// This is a line added for testing on Dev_YourName - Demo video.
 }
 
 
