@@ -47,6 +47,7 @@
 void KeepBothChanges ( void )
 {
 	// Simply add a new line comment (like this one) below.
+	// This line has been added to main/master while you've been developing.
 	// This is a new comment line added via Dev_Steve branch.
 	// This is a new comment line added via Dev_Steve3 branch.
 }
@@ -64,8 +65,7 @@ void KeepBothChanges ( void )
 void KeepMasterChangesDiscardDev ( void )
 {
 	// Simply add a new line comment line below.
-	// This is a new comment line added via Dev_Steve branch.
-	// This is a new comment line added via Dev_Steve3 branch.
+	// This line has been added to main/master while you've been developing.
 }
 
 /****************************
