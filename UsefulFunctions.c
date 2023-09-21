@@ -1,5 +1,97 @@
+/******************************************************************
+* This file is to be used to make edits, cause conflicts and then
+* resolve them through pull request, resolve conflicts and merging.
+* 
+* Step 1: Clone this repo to your local machine.
+*
+* Step 2: Create a branch that you'll be committing your changes to.
+* Note: It might be worth including your name in the branch name as we
+* may well end up with many many branches! i.e. Mine would be "Dev_Steve"
+* 
+* Step 3: Make and commit changes...
+* There are three functions at the top of this file (below), each with
+* instructions to edit in a certain way.
+* 
+* Step 4: Create a Pull Request and add support@yourengineeringsuccess.co.uk as a reviewer.
+* 
+* Step 5: Wait. I'll need to receive the pull request, then modify the main/master branch in
+* the relevant way to cause the intended type of conflict with your merge.
+* I'll add a comment to the pull request when this is done (you'll also see the display will change
+* to indicate there are conflicts that must be resolved before the merge can be completed).
+*
+* Step 6: Merge the master changes into your branch and resolve the conflicts there.
+* 
+* Step 7: Once conflicts are resolved request a final review before merging changes once approved.
+* 
+* IMPORTANT: With multiple people modifying the same lines of code on multiple branches the 
+* conflict resolution may be a little complex at times, however this is the intended 'practice'
+* we'll get from this.
+* 
+* -----
+* Note: There's also a couple of "Helper" functions added at the bottom of this file,
+* please feel free to add to these if you wish. 
+* 
+*/
 
 
+/****************************
+* @brief KeepBothChanges
+* Changes to this function on both the master AND any development branch
+* must ALL be kept when it comes to resolving conflicts.
+*
+* This represents the scenario where the main/master has been updated while you've
+* been developing, and you need to include the new changes in main/master as well
+* as the changes from your branch.
+*/
+void KeepBothChanges ( void )
+{
+	// Simply add a new line comment (like this one) below.
+	// This is a new comment line added via Dev_Steve branch.
+}
+
+/****************************
+* @brief KeepMasterChangesDiscardDev( void )
+* Changes to this function from main/master should be kept and the changes on your
+* development branch should be discarded when it comes to resolving conflicts.
+*
+* This represents the scenario where the main/master has been updated in the same way
+* that you've modified your development branch, in which case you want to keep the
+* main/master changes and discard the same functionality you've added to your dev branch.
+* After all, there's no point in making unnecessary changes.
+*/
+void KeepMasterChangesDiscardDev ( void )
+{
+	// Simply add a new line comment line below.
+	// This is a new comment line added via Dev_Steve branch.
+}
+
+/****************************
+* @brief KeepDevChangesOverrideMaster( void )
+* Changes to this function from main/master should be discarded in favor of the changes
+* on your development branch when it comes to resolving conflicts.
+*
+* This represents the scenario where the main/master has been updated in the same way
+* that you've modified your development branch, however your development branch includes
+* additional changes that are also now required.
+*/
+void KeepDevChangesOverrideMaster ( void )
+{
+	// Simply add a new line comment line below.
+	// This is a new comment line added via Dev_Steve branch.
+}
+
+
+
+
+***********************************
+***********************************
+***********************************
+***                             ***
+*** HELPER FUNCTIONS BELOW HERE ***
+***                             ***
+***********************************
+***********************************
+***********************************
 
 
 
