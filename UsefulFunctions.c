@@ -2,7 +2,8 @@
 * This file is to be used to make edits, cause conflicts and then
 * resolve them through pull request, resolve conflicts and merging.
 * 
-* Step 1: Clone this repo to your local machine.
+* Step 1: Clone this repo to your local machine. You'll also need to notify me
+* that you want to be a collaborator for this repo (please remind me of your GitHub user name).
 *
 * Step 2: Create a branch that you'll be committing your changes to.
 * Note: It might be worth including your name in the branch name as we
@@ -47,6 +48,7 @@ void KeepBothChanges ( void )
 {
 	// Simply add a new line comment (like this one) below.
 	// This is a new comment line added via Dev_Steve branch.
+	// This is a new comment line added via Dev_Steve3 branch.
 }
 
 /****************************
@@ -63,6 +65,7 @@ void KeepMasterChangesDiscardDev ( void )
 {
 	// Simply add a new line comment line below.
 	// This is a new comment line added via Dev_Steve branch.
+	// This is a new comment line added via Dev_Steve3 branch.
 }
 
 /****************************
@@ -78,6 +81,7 @@ void KeepDevChangesOverrideMaster ( void )
 {
 	// Simply add a new line comment line below.
 	// This is a new comment line added via Dev_Steve branch.
+	// This is a new comment line added via Dev_Steve3 branch.
 }
 
 
