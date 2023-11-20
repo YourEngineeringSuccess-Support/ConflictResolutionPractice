@@ -59,8 +59,8 @@ all: main-build
 main-build: FunctionPointerDemo.elf secondary-outputs
 
 # Tool invocations
-FunctionPointerDemo.elf FunctionPointerDemo.map: $(OBJS) $(USER_OBJS) C:\DATA\YEP\MembershipArea\IDEWorkspace\GroupDemos\FunctionPointerDemo\STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "FunctionPointerDemo.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\DATA\YEP\MembershipArea\IDEWorkspace\GroupDemos\FunctionPointerDemo\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FunctionPointerDemo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+FunctionPointerDemo.elf FunctionPointerDemo.map: $(OBJS) $(USER_OBJS) C:\DATA\YEP\MembershipArea\ClientRepos\ConflictResolutionPractice\FunctionPointerDemo\STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "FunctionPointerDemo.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\DATA\YEP\MembershipArea\ClientRepos\ConflictResolutionPractice\FunctionPointerDemo\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FunctionPointerDemo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
