@@ -53,7 +53,7 @@ void KeepBothChanges ( void )
 	// This is a line added for testing on Dev_YourName - Demo video Take 2.
 	// This is a line added to main that will conflict with other changes here.
 	// This is a line added for testing on neill_lambert_dev.
-
+	// a second line added by n_lambert on neill_lambert_dev.
 >>>>>>> Stashed changes
 }
 
@@ -76,7 +76,7 @@ void KeepMasterChangesDiscardDev ( void )
 	// This is a line added for testing on Dev_YourName - Demo video.
 	// This is a line added to main that will conflict with other changes here.
 	// This is a line added for testing on neill_lambert_dev.
-
+	// a second line added by n_lambert on neill_lambert_dev.
 >>>>>>> Stashed changes
 }
 
@@ -98,6 +98,7 @@ void KeepDevChangesOverrideMaster ( void )
 	// This is a line added for testing on Dev_YourName - Demo video.
 	// This is a line added for testing on Dev_YourName - Demo video Take 2.
 	// This is a line added for testing on neill_lambert_dev.
+	// a second line added by n_lambert on neill_lambert_dev.
 >>>>>>> Stashed changes
 }
 
