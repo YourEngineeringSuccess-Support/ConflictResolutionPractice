@@ -55,6 +55,8 @@ void KeepBothChanges ( void )
 	// This is a line added for testing on neill_lambert_dev.
 	// a second line added by n_lambert on neill_lambert_dev.
 	// a third line added by n_lambert on neill_lambert_dev.
+	// a fourth line added by n_lambert on neill_lambert_dev.
+
 >>>>>>> Stashed changes
 }
 
@@ -79,6 +81,8 @@ void KeepMasterChangesDiscardDev ( void )
 	// This is a line added for testing on neill_lambert_dev.
 	// a second line added by n_lambert on neill_lambert_dev.
 	// a third line added by n_lambert on neill_lambert_dev.
+	// a fourth line added by n_lambert on neill_lambert_dev.
+	
 	
 >>>>>>> Stashed changes
 }
@@ -103,6 +107,9 @@ void KeepDevChangesOverrideMaster ( void )
 	// This is a line added for testing on neill_lambert_dev.
 	// a second line added by n_lambert on neill_lambert_dev.
 	// a third line added by n_lambert on neill_lambert_dev.
+	// a fourth line added by n_lambert on neill_lambert_dev.
+
+
 >>>>>>> Stashed changes
 }
 
