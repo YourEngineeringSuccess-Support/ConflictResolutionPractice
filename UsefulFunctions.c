@@ -71,16 +71,9 @@ void KeepMasterChangesDiscardDev ( void )
 {
 	// Simply add a new line comment line below.
 <<<<<<< Updated upstream
-	// This is a new comment line added via Dev_Steve branch.
+
 =======
-	// This is a line added for testing on Dev_YourName - Demo video.
 	// This is a line added to main that will conflict with other changes here.
-	// This is a line added for testing on neill_lambert_dev.
-	// a second line added by n_lambert on neill_lambert_dev.
-	// a third line added by n_lambert on neill_lambert_dev.
-	// a fourth line added by n_lambert on neill_lambert_dev.
-	
-	
 >>>>>>> Stashed changes
 }
 
