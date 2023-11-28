@@ -2,7 +2,8 @@
 * This file is to be used to make edits, cause conflicts and then
 * resolve them through pull request, resolve conflicts and merging.
 * 
-* Step 1: Clone this repo to your local machine.
+* Step 1: Clone this repo to your local machine. You'll also need to notify me
+* that you want to be a collaborator for this repo (please remind me of your GitHub user name).
 *
 * Step 2: Create a branch that you'll be committing your changes to.
 * Note: It might be worth including your name in the branch name as we
@@ -46,10 +47,8 @@
 void KeepBothChanges ( void )
 {
 	// Simply add a new line comment (like this one) below.
-<<<<<<< Updated upstream
-	// This is a new comment line added via Dev_Steve branch.
 
-=======
+	// This is a new comment line added via Dev_Steve branch.
 	// This is a line added to main that will conflict with other changes here.
 	// This is a line added for testing on Dev_YourName - Demo video.
 	// This is a line added for testing on Dev_YourName - Demo video Take 2.
@@ -58,7 +57,10 @@ void KeepBothChanges ( void )
 	// a second line added by n_lambert on neill_lambert_dev.
 	// a third line added by n_lambert on neill_lambert_dev.
 	// a fourth line added by n_lambert on neill_lambert_dev.
->>>>>>> Stashed changes
+	// This is a line added for testing on Dev_YourName - Demo video.
+	// This is a line added for testing on Dev_YourName - Demo video Take 2.
+	// This is a line added to main that will conflict with other changes here.
+	// This is another line added to main that will conflict with other changes here.
 
 }
 
@@ -75,11 +77,10 @@ void KeepBothChanges ( void )
 void KeepMasterChangesDiscardDev ( void )
 {
 	// Simply add a new line comment line below.
-<<<<<<< Updated upstream
 
-=======
 	// This is a line added to main that will conflict with other changes here.
->>>>>>> Stashed changes
+	// This is a line added to main that will conflict with other changes here.
+	// This is another line added to main that will conflict with other changes here.
 }
 
 /****************************
@@ -94,18 +95,15 @@ void KeepMasterChangesDiscardDev ( void )
 void KeepDevChangesOverrideMaster ( void )
 {
 	// Simply add a new line comment line below.
-<<<<<<< Updated upstream
 	// This is a new comment line added via Dev_Steve branch.
-=======
 	// This is a line added for testing on Dev_YourName - Demo video.
 	// This is a line added for testing on Dev_YourName - Demo video Take 2.
 	// This is a line added for testing on neill_lambert_dev.
 	// a second line added by n_lambert on neill_lambert_dev.
 	// a third line added by n_lambert on neill_lambert_dev.
 	// a fourth line added by n_lambert on neill_lambert_dev.
-
-
->>>>>>> Stashed changes
+	// This is a line added for testing on Dev_YourName - Demo video.
+	// This is a line added for testing on Dev_YourName - Demo video Take 2.
 }
 
 
