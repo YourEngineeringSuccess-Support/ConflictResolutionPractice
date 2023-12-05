@@ -1,3 +1,0 @@
-../Src/DIOHandler.c:51:6:DIOHandler_Run	16	static
-../Src/DIOHandler.c:79:9:DIOHandler_Get_Digital_Input_State	16	static
-../Src/DIOHandler.c:89:6:DIOHandler_Register_DI_Change_Callback	16	static
