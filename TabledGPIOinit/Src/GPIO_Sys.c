@@ -156,7 +156,7 @@ uint8_t GPIO_Sys_Get_Input (eGPIO_PINS ePin)
 {
 	// Return the data for relevant GPIO pin
 	// i.e. (note: Compressed if - if relevant bit set, return 1 instead of the bit in the relevant position).
-	return ((GPIO_Pins[ePin].pPort->IDR & GPIO_Pins[ePin].uc_Pin) == 0) ? 0: 1;
+	return ((GPIO_Pins[ePin].pPort->IDR & (1 << GPIO_Pins[ePin].uc_Pin)) == 0) ? 0: 1;
 }
 
 
@@ -168,10 +168,10 @@ void GPIO_Sys_Set_Output (eGPIO_PINS ePin, uint8_t NewState)
 	// i.e.
 	if (NewState)
 	{
-		GPIO_Pins[ePin].pPort->ODR |= GPIO_Pins[ePin].uc_Pin;
+		GPIO_Pins[ePin].pPort->ODR |= 1 << GPIO_Pins[ePin].uc_Pin;
 	}
 	else
 	{
-		GPIO_Pins[ePin].pPort->ODR &= ~(GPIO_Pins[ePin].uc_Pin);
+		GPIO_Pins[ePin].pPort->ODR &= ~(1 << GPIO_Pins[ePin].uc_Pin);
 	}
 }

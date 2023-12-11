@@ -30,6 +30,8 @@ int main(void)
     /* Loop forever */
 	while(1)
 	{
+		GPIO_Sys_Set_Output(eGPIO_IndicatorLED, 1);
+		GPIO_Sys_Set_Output(eGPIO_IndicatorLED, 0);
 	}
 }
 
