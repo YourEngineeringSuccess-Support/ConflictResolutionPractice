@@ -15,7 +15,7 @@ typedef enum
 	GPIO_Mode_Input,
 	GPIO_Mode_Output,
 	GPIO_Mode_Alt,
-	GPIO_Mode_Analogue
+	GPIO_Mode_Analogue,
 }ePIN_MODE;
 
 
@@ -38,7 +38,13 @@ typedef struct
 
 
 
+//#define BANANA		0
 
+#ifdef BANANA
+
+Include this
+
+#endif
 
 
 
@@ -52,6 +58,8 @@ _GPIO_PIN_STRUCT GPIO_Pins[] =
 	[eGPIO_UserButton] = 	{GPIOA, 	1,		RCC_AHB1ENR_GPIOAEN,	GPIO_Mode_Input},
 	[eGPIO_Interlock1] = 	{GPIOG,		12,		RCC_AHB1ENR_GPIOGEN,	GPIO_Mode_Input},
 	[eGPIO_Interlock2] = 	{GPIOC,		11,		RCC_AHB1ENR_GPIOCEN,	GPIO_Mode_Input},
+	[eGPIO_Interlock3] = 	{(void *)0x123,		11,		RCC_AHB1ENR_GPIOCEN,	3},
+
 
 	// Outputs
 	[eGPIO_IndicatorLED] = 	{GPIOG,		13,		RCC_AHB1ENR_GPIOGEN,	GPIO_Mode_Output},
@@ -73,15 +81,15 @@ _GPIO_PIN_STRUCT GPIO_Pins[] =
 {
 	// Inputs			  	PORT		Pin		Clock Source Bit		Mode
 	[eGPIO_UserButton] = 	{GPIOA, 	10,		RCC_AHB1ENR_GPIOAEN,	GPIO_Mode_Input},
-	[eGPIO_Interlock1] = 	{GPIOE,		1,		RCC_AHB1ENR_GPIOGEN,	GPIO_Mode_Input},
-	[eGPIO_Interlock2] = 	{GPIOD,		13,		RCC_AHB1ENR_GPIOCEN,	GPIO_Mode_Input},
+	[eGPIO_Interlock1] = 	{GPIOE,		1,		RCC_AHB1ENR_GPIOEEN,	GPIO_Mode_Input},
+	[eGPIO_Interlock2] = 	{GPIOD,		13,		RCC_AHB1ENR_GPIODEN,	GPIO_Mode_Input},
 //	[eGPIO_DebugInput] =	{GPIOF,		10,		RCC_AHB1ENR_GPIOCEN,	GPIO_Mode_Input},
 
 
 	// Outputs
 	[eGPIO_IndicatorLED] = 	{GPIOG,		14,		RCC_AHB1ENR_GPIOGEN,	GPIO_Mode_Output},
-	[eGPIO_SirenOutput] = 	{GPIOB,		10,		RCC_AHB1ENR_GPIODEN,	GPIO_Mode_Output},
-	[eGPIO_WarningBeacon] = {GPIOA,		1,		RCC_AHB1ENR_GPIOEEN,	GPIO_Mode_Output},
+	[eGPIO_SirenOutput] = 	{GPIOB,		10,		RCC_AHB1ENR_GPIOBEN,	GPIO_Mode_Output},
+	[eGPIO_WarningBeacon] = {GPIOA,		1,		RCC_AHB1ENR_GPIOAEN,	GPIO_Mode_Output},
 //	[eGPIO_DebugOutput] = {GPIOA,		3,		RCC_AHB1ENR_GPIOEEN,	GPIO_Mode_Output},
 };
 
