@@ -1,3 +1,0 @@
-../Src/GPIO_Sys.c:118:6:GPIO_Sys_Init	6
-../Src/GPIO_Sys.c:163:9:GPIO_Sys_Get_Input	1
-../Src/GPIO_Sys.c:173:6:GPIO_Sys_Set_Output	2
