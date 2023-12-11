@@ -1,0 +1,3 @@
+../Src/GPIO_Sys.c:118:6:GPIO_Sys_Init	16	static
+../Src/GPIO_Sys.c:163:9:GPIO_Sys_Get_Input	16	static
+../Src/GPIO_Sys.c:173:6:GPIO_Sys_Set_Output	16	static
