@@ -1,0 +1,8 @@
+../Inc/STM32F4Headers/core_cm4.h:1816:22:__NVIC_SetPriority	16	static
+../Inc/STM32F4Headers/core_cm4.h:2022:26:SysTick_Config	16	static
+../Src/SysTick.c:46:6:SysTick_Handler	4	static
+../Src/SysTick.c:57:6:SysTick_Init	8	static
+../Src/SysTick.c:68:10:SysTick_Get_Timestamp	72	static
+../Src/SysTick.c:98:10:SysTick_Elapsed_MicroSeconds	32	static
+../Src/SysTick.c:117:10:SysTick_MicroSeconds_to_Counts	16	static
+../Src/SysTick.c:128:10:SysTick_Period_MicroSeconds	40	static

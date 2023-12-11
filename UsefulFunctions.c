@@ -48,6 +48,10 @@ void KeepBothChanges ( void )
 {
 	// Simply add a new line comment (like this one) below.
 
+	// This is a line added for testing on Dev_YourName - Demo video.
+	// This is a line added for testing on Dev_YourName - Demo video Take 2.
+	// This is a line added to main that will conflict with other changes here.
+	// This is another line added to main that will conflict with other changes here.
 	// This is a new comment line added via Dev_Steve branch.
 	// This is a line added to main that will conflict with other changes here.
 	// This is a line added for testing on Dev_YourName - Demo video.
@@ -78,9 +82,13 @@ void KeepMasterChangesDiscardDev ( void )
 {
 	// Simply add a new line comment line below.
 
-	// This is a line added to main that will conflict with other changes here.
+	// This is a line added for testing on Dev_YourName - Demo video.
 	// This is a line added to main that will conflict with other changes here.
 	// This is another line added to main that will conflict with other changes here.
+
+	// This is a line added for testing on Dev_YourName - Demo video.
+	// This is a line added to main that will conflict with other changes here.
+
 }
 
 /****************************
