@@ -9,6 +9,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include Startup/subdir.mk
 -include Src/subdir.mk
 -include objects.mk
 
@@ -58,8 +59,8 @@ all: main-build
 main-build: TabledGPIOinit.elf secondary-outputs
 
 # Tool invocations
-TabledGPIOinit.elf TabledGPIOinit.map: $(OBJS) $(USER_OBJS) fail-specified-linker-script-missing makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "TabledGPIOinit.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 --specs=nosys.specs -Wl,-Map="TabledGPIOinit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+TabledGPIOinit.elf TabledGPIOinit.map: $(OBJS) $(USER_OBJS) /home/neill/Documents/GitHub/ConflictResolutionPractice/TabledGPIOinit/STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "TabledGPIOinit.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/neill/Documents/GitHub/ConflictResolutionPractice/TabledGPIOinit/STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TabledGPIOinit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
